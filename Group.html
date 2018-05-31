@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<!-- 헤드 -->
+  <head>
+    <meta charset="utf-8">
+    <title>EASY TOGETHER</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/group.css' %}">
+    <!-- 헤드끝 -->
+  </head>
+  <!-- 바디 -->
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/home/">EASY TOGETHER</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/home/">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="delivery.html">DELIVERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="help.html">HELP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/QNA/">Q&A</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PAGE
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="http://facebook.com/">FACEBOOK</a>
+                <a class="dropdown-item" href="http://wodn1478.tistory.com/">BLOG</a>
+                <a class="dropdown-item" href="http://cafe.naver.com/">NAVER-CAFE</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+      <form>
+        <p class="wnth"></p>
+        <button class="btn btn-default ico-loc" type="button" ng-click="get_current_location()">&nbsp;</button>
+        <div class="autocomplete" style="width:300px;">
+          <input id="myInput" type="text" name="myCountry" placeholder="울산광역시 울주군 유니스트길 50" placeholder="Country" list="languages">
+          <datalist id="languages">
+          <option value="울산광역시 울주군 유니스트길 50">
+          <option value="울산광역시 울주군 범서읍">
+          </datalist>
+          <!-- <input type="text" list="languages"> -->
+        </div>
+        <a href="group.html" class="searchbox">제출</a>
+      </form>
+      <div class="card">
+        <img src="assets/gd.jpg" alt="Avatar" style="width:10%">
+        <div class="container">
+            <h4><b>허재우님</b></h4>
+            <p>I want to order a pizza school at 301-dong dormitory, Unist Way 50, Ulju-Gun, Ulsan Metropolitan City.</p>
+            <p>I am collecting two people to deliver together.</p> <f> 1 / 3 collected</f> <a href="join.html" class="searchbox">참여</a>
+          </div>
+        </div>
+      <div class="card">
+        <img src="assets/gdd.png" alt="Avatar" style="width:10%">
+        <div class="container">
+            <h4><b>조우영님</b></h4>
+            <p>I want to order a chicken at 301-dong dormitory, Unist way 50, Ulju-Gun, Ulsan Metropolitan City.</p>
+            <p>I am looking for someone with a delivery fee of 2,000 won.</p> <f> 1 / n collected</f> <a href="join.html" class="searchbox">참여</a>
+          </div>
+        </div>
+      <div class="card">
+        <img src="assets/anonymous.png" alt="Avatar" style="width:10%">
+        <div class="container">
+            <h4><b>익명</b></h4>
+            <p>I want to order sushi at Unist way 50, Ulju-Gun, Ulsan Metropolitan City.</p>
+            <p>I am looking for someone to order with sushi set. (1+1 event)</p> <f> 1 / 2 collected</f> <a href="join.html" class="searchbox">참여</a>
+          </div>
+        </div>
+      <div class="card">
+        <img src="assets/anonymous.png" alt="Avatar" style="width:10%">
+        <div class="container">
+            <h4><b>익명</b></h4>
+            <p>I want to order Mc.donald at Unist way 50, Ulju-Gun, Ulsan Metropolitan City.</p>
+            <p>Please join anyone to order McDonald's.</p> <f> 5 / n collected</f> <a href="join.html" class="searchbox">참여</a>
+          </div>
+        </div>
+<!-- 스크립트 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  <!-- 바디끝 -->
+</html>
